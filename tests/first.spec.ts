@@ -16,7 +16,14 @@ test('@smoke get categories', async({request})=>{
     expect(response).toBeOK
     expect(body).toContain("smartphones")
 
-    
-    console.log(body);
 
 } )
+test('get single category ', async({request}) => {
+    
+    const response = await request.get('https://dummyjson.com/products/category/smartphones')
+    const body = await response.json()
+
+    
+
+
+})
