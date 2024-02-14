@@ -18,7 +18,7 @@ test('@smoke get categories', async({request})=>{
 
 
 } )
-test('get single category ', async({request}) => {
+test.only('get single category ', async({request}) => {
     
     const response = await request.get('/products/category/smartphones')
     const body = await response.json()
