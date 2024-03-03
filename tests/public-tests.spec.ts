@@ -27,3 +27,20 @@ test.only('get single category ', async({request}) => {
 
 
 })
+
+
+test.only('add a new product ', async({request}) => {
+    
+    const response = await request.post('/products/add', {
+        data:{
+            "title": "Book"
+        }
+    })
+    const body = await response.json();
+    console.log(body);
+    expect(body.title).toContain('Book');
+
+    
+
+
+})
