@@ -1,7 +1,7 @@
 import {test as setup}  from '@playwright/test';
 import { getAuthData } from '../utils';
 import fs from 'fs'
-import test from 'node:test';
+
 
 
 const token = './.auth/token.json'
